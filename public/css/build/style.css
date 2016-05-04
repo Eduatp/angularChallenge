@@ -5,6 +5,7 @@
   cursor: pointer;
 }
 .list span:hover:after,
+.list .list,
 .list span.fav:after {
   content: ' \2605';
   color: #ffcb00;
