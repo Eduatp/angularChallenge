@@ -1,0 +1,21 @@
+<div class="container" ng-controller="FoodController as controller">
+	<div class="col-lg-8 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+		<div class="panel panel-primary">
+			<div class="panel-heading"><h1 class="panel-title">Food Searcher</h1></div>
+			<div class="panel-body ">
+				<div class="text-center">
+					<input type="text" value="" ng-model="$storage.food" />
+					<button class="btn btn-xs btn-primary" ng-click="controller.findFood()">Search</button>
+				</div>
+				<table   class="table table-striped">
+					<tr>
+						<th> Food number </th>
+						<th> Food name </th>
+						<th> Basic report </th>
+					</tr>
+					<tr ng-repeat="f in foodModel" food="f" />
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

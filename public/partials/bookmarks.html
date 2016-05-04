@@ -1,0 +1,13 @@
+<div class="container" ng-controller="FoodController as controller">
+	<div class="text-center">
+		<a class="btn btn-primary " ng-click="controller.getFavs()">Click to display Favorites</a>
+	</div>
+<table   class="table table-striped">
+	<tr>
+		<th> Food number </th>
+		<th> Food name </th>
+		<th> Basic report </th>
+	</tr>
+	<tr ng-repeat="f in favFoodModel" food="f" />
+</table>
+</div>	

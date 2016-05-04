@@ -1,0 +1,14 @@
+.red {
+  color: #f00;
+}
+.list span {
+  cursor: pointer;
+}
+.list span:hover:after,
+.list span.fav:after {
+  content: ' \2605';
+  color: #ffcb00;
+}
+.list span.fav:hover:after {
+  content: ' \2606';
+}

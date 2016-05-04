@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/build/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/build/bootstrap.css">
+    <script type="text/javascript" src="./js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="./js/angular-loader.js"></script>
+    <script type="text/javascript" src="./js/angular-route.js"></script>
+    <script type="text/javascript" src="./js/angular-resource.js"></script>
+    <script type="text/javascript" src="./js/ngStorage.min.js"></script>
+    <title>My Food App</title>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+		<div ng-controller="MainController">
+			<div class="jumbotron">
+			  <div class="page-header text-center">
+		  		<h1>Food Reports <br><small>from the USDA National Nutrient Database</small></h1>
+			  </div>
+			  <p class="text-center">Click on the search button to look for an specific food either by id or name. And you can click
+			  over a food number to fav/unfav your food (you will see a star next to it)</p>
+			  <p class="text-center"><a class="btn btn-primary btn-lg" href="#searcher" role="button">Search</a>
+			  <a class="btn btn-primary btn-lg" href="#bookmarks" role="button">Favorites</a></p>
+			</div>
+			<div ng-view></div>
+
+		</div>
+	</div>
+</body>
+</html>
